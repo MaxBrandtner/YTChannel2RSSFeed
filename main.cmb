@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.10.3" target_tk="gtk-4.0">
+  <ui>
+	(1,None,"main.ui","main.ui",None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkApplicationWindow","window",None,None,None,None,None),
+	(1,7,"GtkStack","main_stack",1,None,None,None,1),
+	(1,23,"GtkBox","selection_box",None,None,None,None,None),
+	(1,24,"GtkEntry","YT_URL",23,None,None,None,None),
+	(1,25,"GtkButton","convert_button",23,None,None,None,1),
+	(1,26,"GtkBox","output_box",None,None,None,None,None),
+	(1,27,"GtkLabel","output_label",26,None,None,None,None),
+	(1,28,"GtkButton","restart_button",26,None,None,None,1)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","250",None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","750",None,None,None,None,None),
+	(1,1,"GtkWindow","title","YTChannel2RSSFeed",None,None,None,None,None),
+	(1,7,"GtkStack","transition-type","slide-left-right",None,None,None,None,None),
+	(1,7,"GtkStack","visible-child","8",None,None,None,None,None),
+	(1,23,"GtkOrientable","orientation","vertical",None,None,None,None,None),
+	(1,23,"GtkWidget","name","selection_box",None,None,None,None,None),
+	(1,24,"GtkEntry","placeholder-text","YT channel URL ...",None,None,None,None,None),
+	(1,24,"GtkEntry","secondary-icon-name","emblem-important-symbolic",None,None,None,None,None),
+	(1,24,"GtkEntry","secondary-icon-tooltip-text","invalid URL",None,None,None,None,None),
+	(1,24,"GtkWidget","halign","center",None,None,None,None,None),
+	(1,24,"GtkWidget","margin-top","25",None,None,None,None,None),
+	(1,24,"GtkWidget","valign","center",None,None,None,None,None),
+	(1,25,"GtkButton","label","Convert",None,None,None,None,None),
+	(1,25,"GtkWidget","halign","center",None,None,None,None,None),
+	(1,25,"GtkWidget","margin-top","10",None,None,None,None,None),
+	(1,25,"GtkWidget","valign","center",None,None,None,None,None),
+	(1,26,"GtkOrientable","orientation","vertical",None,None,None,None,None),
+	(1,26,"GtkWidget","name","output_box",None,None,None,None,None),
+	(1,27,"GtkLabel","label","some YT URL",None,None,None,None,None),
+	(1,27,"GtkLabel","selectable","True",None,None,None,None,None),
+	(1,27,"GtkWidget","halign","center",None,None,None,None,None),
+	(1,27,"GtkWidget","margin-top","50",None,None,None,None,None),
+	(1,27,"GtkWidget","valign","center",None,None,None,None,None),
+	(1,28,"GtkButton","label","enter new URL",None,None,None,None,None),
+	(1,28,"GtkWidget","halign","center",None,None,None,None,None),
+	(1,28,"GtkWidget","margin-top","10",None,None,None,None,None),
+	(1,28,"GtkWidget","valign","center",None,None,None,None,None)
+  </object_property>
+</cambalache-project>
