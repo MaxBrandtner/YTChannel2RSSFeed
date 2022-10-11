@@ -8,6 +8,6 @@ add_project_link_arguments('-pthread', language : 'c')
 gnome = import('gnome')
 resources = gnome.compile_resources('resources', 'YTChannel2RSSFeed.gresource.xml')
 
-sourcefiles = files('main.c', 'algorithms.c', 'ip_lookup.c', 'callbacks.c')
+sourcefiles = files('src/main.c', 'src/algorithms.c', 'src/ip_lookup.c', 'src/callbacks.c')
 
 executable(PROJECT_NAME, sourcefiles, resources, dependencies: gtkdep, export_dynamic: true)
