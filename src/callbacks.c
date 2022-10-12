@@ -73,7 +73,10 @@ void clicked_convert_button_convert_callback(void *input_data){
   GtkEntryBuffer *entry_buffer = gtk_entry_get_buffer(entry);
 
   char *cmd = calloc(BUFSIZ + 1, sizeof(char));
-  strcpy(cmd, "bash convert.sh ");
+  strcpy(cmd, "cd ");
+  strcat(cmd, LOCAL_DIR);
+  strcat(cmd, "src/");
+  strcat(cmd, "; bash convert.sh ");
 
   char *input_text = (char*)gtk_entry_buffer_get_text(GTK_ENTRY_BUFFER(entry_buffer));
   strcat(cmd, input_text);
