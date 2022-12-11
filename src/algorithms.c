@@ -9,7 +9,7 @@ char* FilterArray(char* input_array){
 	int CharCheck(char input){
 		int dec_input = (int)input;
 
-		if((dec_input == 45)||(dec_input == 46)||(dec_input == 47)||(dec_input == 58)||(dec_input == 95)||(dec_input >= 48 && dec_input <= 57)||(dec_input >= 65 && dec_input <= 90)||(dec_input >= 97 && dec_input <= 122)||(dec_input == 45)||(dec_input == 95)||(dec_input == 127)||(dec_input == 255)){
+		if((dec_input == 45)||(dec_input == 46)||(dec_input == 47)||(dec_input == 58)||(dec_input == 95)||(dec_input >= 48 && dec_input <= 57)||(dec_input >= 65 && dec_input <= 90)||(dec_input >= 97 && dec_input <= 122)||(dec_input == 45)||(dec_input == 95)||(dec_input == 127)||(dec_input == 255)||(dec_input == 64)){
 
 			return 1;
 		}else{
